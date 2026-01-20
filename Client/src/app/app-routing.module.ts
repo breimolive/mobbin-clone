@@ -1,6 +1,5 @@
 import {ActivatedRouteSnapshot, createUrlTreeFromSnapshot, RouterModule, RouterStateSnapshot, Routes, UrlTree} from '@angular/router';
 import {NotFoundComponent} from "./not-found/not-found.component";
-import {RegisterComponent} from "./register/register.component";
 import {LoginComponent} from "./login/login.component";
 import {catchError, map, Observable, of} from "rxjs";
 import {MainComponent} from "./main/main.component";
@@ -23,7 +22,6 @@ function isLoggedIn(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): 
 const routes: Routes = [
   { path: '', component: MainComponent, canActivate: [isLoggedIn]},
   { path: 'login', component: LoginComponent },
-  { path: 'register', component: RegisterComponent },
   { path: '**', component: NotFoundComponent }
 ];
 
