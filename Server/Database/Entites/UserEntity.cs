@@ -11,7 +11,7 @@ public class UserEntity
     public const int MaxEmailLength = 100;
 
     public const int MinPasswordLength = 8;
-    public const int MaxPasswordLength = 16;
+    public const int MaxPasswordLength = 200;
 
     public Guid Id { get; protected set; }
     public string Email { get; protected set; }
@@ -28,9 +28,10 @@ public class UserEntity
     public UserEntity(string email, string password, string pepper)
     {
         Id = Guid.NewGuid();
+        Email = email;
+        FullName = email.Contains('@') ? email.Split('@')[0] : email;
         Salt = GenerateSalt();
         Hash = Convert.ToBase64String(HashPassword(password, Salt, pepper));
-        Email = email;
     }
 
     public bool ComparePassword(string password, string pepper)

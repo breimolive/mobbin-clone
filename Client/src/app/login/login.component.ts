@@ -1,13 +1,22 @@
 import { Component } from '@angular/core';
-import {FormBuilder, Validators} from "@angular/forms";
-import {ApiService} from "../api.service";
-import {Router} from "@angular/router";
+import { FormBuilder, Validators } from "@angular/forms";
+import { ApiService } from "../api.service";
+import { Router } from "@angular/router";
+
+
+/* Put constants into a file */
+export const UserConstants = {
+  MaxEmailLength: 254,
+  MinEmailLength: 5,
+  MaxPasswordLength: 200,
+  MinPasswordLength: 8
+};
 
 @Component({
-    selector: 'app-register',
-    templateUrl: './login.component.html',
-    styleUrl: './login.component.css',
-    standalone: false
+  selector: 'app-register',
+  templateUrl: './login.component.html',
+  styleUrl: './login.component.css',
+  standalone: false
 })
 export class LoginComponent {
   constructor(
@@ -21,7 +30,7 @@ export class LoginComponent {
   PasswordVisible = false;
 
   EmailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-  PasswordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{12,}/;
+  PasswordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,200}/;
 
   loginForm = this.formBuilder.group({
     Gmail: [
@@ -29,8 +38,8 @@ export class LoginComponent {
       [
         Validators.required,
         Validators.pattern(this.EmailRegex),
-        Validators.maxLength(100),
-        Validators.minLength(5)
+        Validators.maxLength(UserConstants.MaxEmailLength),
+        Validators.minLength(UserConstants.MinEmailLength)
       ],
     ],
     Password: [
@@ -38,7 +47,8 @@ export class LoginComponent {
       [
         Validators.required,
         Validators.pattern(this.PasswordRegex),
-        Validators.minLength(8)
+        Validators.maxLength(UserConstants.MaxPasswordLength),
+        Validators.minLength(UserConstants.MinPasswordLength)
       ],
     ],
   });

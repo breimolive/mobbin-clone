@@ -7,6 +7,7 @@
   background-color: #141414;
   flex-direction: column;
   display: flex;
+  width: 100vw;
 }
 
 .register-section {
