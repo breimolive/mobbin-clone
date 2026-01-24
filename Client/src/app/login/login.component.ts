@@ -4,7 +4,6 @@ import { ApiService } from "../api.service";
 import { Router } from "@angular/router";
 
 
-/* Put constants into a file */
 export const UserConstants = {
   MaxEmailLength: 254,
   MinEmailLength: 5,
