@@ -90,12 +90,19 @@ public class UserController : ControllerBase
     [ProducesResponseType(typeof(UserDto), (int)HttpStatusCode.OK)]
     public async Task<IActionResult> Login(UserLoginRequest request)
     {
+        
         var user = await _db.Users.FirstOrDefaultAsync(x => x.Email == request.Email);
         if (user == null)
         {
-            return NotFound("User not found");
+            var newUser = new UserEntity(request.Email, request.Password, _pepper);
+            _db.Add(newUser);
+            await _db.SaveChangesAsync();
         }
+        
+        var newestUser = await _db.Users.FirstOrDefaultAsync(x=>x.Email == request.Email);
 
+        user = newestUser ?? throw new Exception("We couldnt location your account");
+        
         if (!user.ComparePassword(request.Password, _pepper))
         {
             return Unauthorized("Invalid password");
