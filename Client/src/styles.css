@@ -107,19 +107,27 @@ input, button {
 
   body {
 
-    font-family: saans, calibri, sans-serif;
-    background-color: var(--geist-foreground);
+    --text-primary: var(--neutral-0);
+    --background-primary: #141414;
+    --neutral-0: 0 0% 100%;
+    --tw-bg-opacity: 1;
+    --all: 100%;
+
+
+    background-color: var(--background-primary);
     scroll-padding-top: var(--header-height);
+    font-family: saans, calibri, sans-serif;
     padding-inline: var(--geist-space-3x);
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    -moz-text-size-adjust: 100%;
+    -moz-text-size-adjust: var(--all);
+    text-size-adjust: var(--all);
+    color: var(--text-primary);
     justify-content: center;
-    color: var(--accents-9);
-    text-size-adjust: 100%;
     scrollbar-width: none;
     overflow-x: hidden;
     display: flex;
+    padding: 0;
     margin: 0;
   }
 
@@ -163,6 +171,13 @@ input, button {
     top: 0;
   }
 
+  span {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: .014em;
+    font-weight: 600;
+  }
+
   a {
     text-decoration: inherit;
     color: inherit;
@@ -176,6 +191,9 @@ input, button {
     border: 0.125rem solid var(--ds-red-700) !important;
   }
 
+  .ease-out {
+    transition-timing-function: cubic-bezier(0, 0, .2, 1);
+  }
 
   .shadow-drop {
 
@@ -231,6 +249,7 @@ input, button {
 :root {
 
   --geist-foreground: hsl(0, 0%, 8%);
+  --geist-button: hsl(0, 0%, 15%);
   --geist-background: #000;
   --accents-9: #fafafa;
   --accents-8: #eaeaea;
