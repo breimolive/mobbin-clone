@@ -1,0 +1,251 @@
+.navbar-wrapper {
+
+  --block: var(--geist-space);
+  --max-content-width: 1920px;
+  --container-x-padding: 2rem;
+  --inline: 5rem;
+  --width: 100vw;
+  --gap: 1rem;
+
+  max-width: calc(var(--max-content-width) + var(--container-x-padding) * 2);
+  justify-content: space-between;
+  flex-direction: column;
+  padding-inline: var(--inline);
+  padding-block: var(--block);
+  align-items: center;
+  width: var(--width);
+  gap: var(--gap);
+  display: flex;
+}
+
+.info {
+  gap: var(--geist-space-6x);
+  display: flex;
+}
+
+.logo-wrapper {
+
+  gap: var(--geist-space-6x);
+  align-items: center;
+  width: var(--all);
+  display: flex;
+}
+
+.logo-wrapper .logo {
+
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+}
+
+.navbar-wrapper p {
+
+  font-size: var(--geist-space-4x);
+  color: var(--ds-gray-600);
+  align-items: center;
+  display: flex;
+}
+
+.navbar-wrapper p:hover {
+
+  color: var(--accents-9);
+  cursor: pointer;
+}
+
+.navbar-wrapper .selected {
+  color: var(--ds-gray-1000);
+}
+
+.middle {
+
+  --max-content-width: 800px;
+  --all: 100%;
+
+  padding-block: var(--geist-space-2x);
+  max-width: var(--max-content-width);
+  width: var(--all);
+}
+
+.middle .search-bar {
+
+  --background-tertiary: var(--geist-button);
+  --text-tertiary: hsl(0 0% 44%);
+  --geist-inline: 20px;
+  --tw-text-opacity: 1;
+  --height: 3rem;
+  --all: 100%;
+
+  background-color: var(--background-tertiary);
+  border-radius: var(--geist-space-6x);
+  padding-inline: var(--geist-inline);
+  justify-content: space-between;
+  color: var(--text-tertiary);
+  height: var(--height);
+  align-items: center;
+  width: var(--all);
+  cursor: pointer;
+  display: flex;
+  border: none;
+
+  transition-property: background-color, color;
+  transition-timing-function: ease-out;
+
+}
+
+.search-bar .search-wrapper {
+
+  --gap: 0.7rem;
+
+  gap: var(--gap);
+  display: flex;
+}
+
+.search-bar .search-wrapper {
+
+  --max: 700px;
+
+  justify-content: space-between;
+  max-width: var(--max);
+  width: var(--all);
+}
+
+.search-bar .search-wrapper span {
+
+  --geist-space-6x: 20px;
+  --spacing: .014em;
+  --weight: 600;
+  --gap: 1rem;
+
+  line-height: var(--geist-space-6x);
+  font-size: var(--geist-space-4x);
+  letter-spacing: var(--spacing);
+  font-weight: var(--weight);
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+.icon-wrapper {
+
+  --gap: 0.7rem;
+
+  gap: var(--gap);
+  display: flex;
+}
+
+.icon {
+
+  --geist-size: var(--geist-space-4x);
+  --geist-space-4x: 20px;
+
+  color: var(--text-primary);
+  height: var(--geist-size);
+  width: var(--geist-size);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.other {
+
+  gap: var(--geist-space-4x);
+  align-items: center;
+  display: flex;
+}
+
+.icon img {
+  width: 24px;
+}
+
+.get-pro-button {
+
+  --height: 2.25rem;
+  --radius: 9999px;
+
+  padding-inline: var(--geist-space-3x);
+  border-radius: var(--radius);
+  height: var(--height);
+  cursor: pointer;
+  border: none;
+}
+
+.user-icon {
+
+  --geist-button: hsl(0, 0%, 13%);
+  --size: 2.25rem;
+  --half: 50%;
+
+  background-color: var(--geist-button);
+  border-radius: var(--half);
+  justify-content: center;
+  align-items: center;
+  height: var(--size);
+  width: var(--size);
+  cursor: pointer;
+  display: flex;
+  border: none;
+}
+
+.user-icon span {
+
+  font-size: var(--geist-space-4x);
+  color: var(--accents-6);
+}
+
+.scan {
+
+  --scan: hsl(0, 0%, 75%);
+
+  stroke: var(--scan);
+  stroke-width: 2px;
+}
+
+.head-section {
+
+  --gap: var(--geist-space-6x);
+
+  align-items: center;
+  width: var(--all);
+  gap: var(--gap);
+  display: flex;
+}
+
+.middle .search-bar .scan:hover {
+
+  --scan: hsl(0, 0%, 100%);
+}
+
+.truncate {
+
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+}
+
+.body-section {
+
+  display: flex;
+  color: white;
+  gap: 1rem;
+  width: 100vw;
+  padding-inline: 32px;
+}
+
+@media (max-width: 1620px) {
+  .navbar-wrapper {
+    --inline: 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .navbar-wrapper .other :not(.user-icon, .user-icon span) {
+    display: none;
+  }
+}
+
+@media (max-width: 415px) {
+  .scan {
+    display: none;
+  }
+}
