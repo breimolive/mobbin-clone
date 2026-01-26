@@ -102,7 +102,7 @@
   top: 140%;
 }
 
-.icon-wrapper:hover .hover-button {
+.icon:hover .hover-button {
 
   transform: translateX(-50%) translateY(5px);
   visibility: visible;
