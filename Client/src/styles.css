@@ -95,6 +95,9 @@ input, button {
 
     .text-body, .text-body-bold {
 
+      --geist-space-4x: 16px;
+      --geist-space-6x: 24px;
+
       font-size: var(--geist-space-4x);
       line-height: var(--geist-space-6x);
       letter-spacing: .009em;
@@ -199,6 +202,16 @@ input, button {
 
     --tw-shadow: 0px 8px 40px 0px #0000000a;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+
+  .text-body-bold {
+    font-weight: 600;
+  }
+
+  .text-body, .text-body-bold {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .009em;
   }
 
   @keyframes OpacityIn {

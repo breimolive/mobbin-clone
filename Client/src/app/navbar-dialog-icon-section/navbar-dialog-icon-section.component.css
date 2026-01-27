@@ -1,0 +1,88 @@
+.dialog-icon-section-wrapper {
+
+  --geist-space-6x: 20px;
+  --all: 100%;
+
+  padding-inline: var(--geist-space-6x);
+  max-height: var(--geist-space-16x);
+  background-clip: padding-box;
+  box-sizing: border-box;
+  height: var(--all);
+  overflow: hidden;
+  display: flex;
+}
+
+.dialog-icon-section {
+
+  column-gap: var(--geist-space-2x);
+  align-items: flex-start;
+  display: flex;
+}
+
+.dialog-icon-section .icon-wrapper {
+
+  color: var(--accents-9);
+  max-width: max-content;
+  overflow: visible;
+}
+
+.dialog-icon-section .icon img {
+
+  --radius: 30%;
+
+  height: var(--geist-space-16x);
+  border-radius: var(--radius);
+  display: block;
+}
+
+.dialog-icon-section .icon-label,
+.dialog-icon-section .icon img,
+.dialog-icon-section .icon {
+
+  --transition-type: cubic-bezier(.4, 0, .2, 1);
+  --transition-target: transform;
+  --transition-time: .15s;
+
+  transition: var(--transition-target) var(--transition-time) var(--transition-type);
+  will-change: var(--transition-target);
+  transform: translateY(0);
+}
+
+
+.dialog-icon-section .icon-label {
+
+  --spacing: .017em;
+  --weight: 600;
+
+  max-width: var(--geist-space-16x);
+  line-height: var(--geist-space-4x);
+  font-size: var(--geist-space-3x);
+  letter-spacing: var(--spacing);
+  font-weight: var(--weight);
+  text-overflow: ellipsis;
+  color: var(--accents-7);
+  white-space: nowrap;
+  text-align: center;
+  overflow: hidden;
+  display: block;
+}
+
+.dialog-icon-section .icon-wrapper:hover .icon,
+.dialog-icon-section .icon-wrapper:hover .icon img {
+
+  --inset-color: hsl(0 0% 100%/16%);
+  --inset-size: 0 0 0 0.5;
+
+  --shadow-logo-inset: inset var(--inset-size) var(--inset-color);
+  --transform-size: -12px;
+
+  transform: translateY(var(--transform-size));
+  inset: var(--shadow-logo-inset);
+}
+
+.dialog-icon-section .icon-wrapper:hover .icon-label {
+
+  --transform-size: -16px;
+
+  transform: translateY(var(--transform-size));
+}

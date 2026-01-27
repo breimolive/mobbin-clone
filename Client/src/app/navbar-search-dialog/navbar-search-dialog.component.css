@@ -2,7 +2,9 @@ dialog {
 
   --geist-box-shadow-color: rgba(0, 0, 0, 0.2);
   --geist-dialog: hsl(0, 0%, 15%);
+  --height-min-calc-value: 720px;
   --searchbar-min-bottom: 120px;
+  --geist-page-height: 100vh;
   --searchbar-top: 120px;
   --vertical-offset: 4px;
   --blur-offset: 12px;
@@ -11,7 +13,8 @@ dialog {
   --width: 100%;
   --top: 8rem;
 
-  height: min(calc(720px + 8px), calc(100vh - var(--searchbar-top) - var(--searchbar-min-bottom) + 8px));
+
+  height: min(calc(var(--height-min-calc-value) + var(--geist-space-2x)), calc(var(--geist-page-height) - var(--searchbar-top) - var(--searchbar-min-bottom) + var(--geist-space-2x)));
   box-shadow: 0 var(--vertical-offset) var(--blur-offset) var(--geist-box-shadow-color);
   background-color: var(--geist-dialog);
   border-radius: var(--radius);
@@ -41,18 +44,25 @@ dialog::backdrop {
 
 .dialog-header input {
 
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: .009em;
-  font-weight: 456;
-  flex-grow: 1;
+  --spacing: .009em;
+  --weight: 456;
+
+  line-height: var(--geist-space-6x);
+  font-size: var(--geist-space-4x);
+  letter-spacing: var(--spacing);
   background-color: transparent;
+  font-weight: var(--weight);
+  color: var(--accents-9);
+  flex-grow: 1;
   border: none;
 }
 
 .dialog-header input::placeholder {
-  color: rgb(165, 165, 165);
+
+  --placeholder-color: rgb(165, 165, 165);
+
   font-feature-settings: "dlig" on, "ss07" on, "calt" off;
+  color: var(--placeholder-color);
 }
 
 .dialog-head-icons {
@@ -68,4 +78,19 @@ dialog::backdrop {
 
 .selected {
   fill: none !important;
+}
+
+.content {
+
+  --geist-space-6x: 20px;
+  --sidebar-space: 260px;
+  --geist-page: 1fr;
+
+  grid-template-columns: var(--sidebar-space) var(--geist-page);
+  padding-left: var(--geist-space-6x);
+  display: grid;
+}
+
+.dialog-content-wrapper {
+  padding-top: var(--geist-space-2x)
 }
