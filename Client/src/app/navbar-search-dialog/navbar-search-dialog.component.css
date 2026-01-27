@@ -1,0 +1,71 @@
+dialog {
+
+  --geist-box-shadow-color: rgba(0, 0, 0, 0.2);
+  --geist-dialog: hsl(0, 0%, 15%);
+  --searchbar-min-bottom: 120px;
+  --searchbar-top: 120px;
+  --vertical-offset: 4px;
+  --blur-offset: 12px;
+  --radius: 1.563rem;
+  --max-width: 51rem;
+  --width: 100%;
+  --top: 8rem;
+
+  height: min(calc(720px + 8px), calc(100vh - var(--searchbar-top) - var(--searchbar-min-bottom) + 8px));
+  box-shadow: 0 var(--vertical-offset) var(--blur-offset) var(--geist-box-shadow-color);
+  background-color: var(--geist-dialog);
+  border-radius: var(--radius);
+  max-width: var(--max-width);
+  margin-top: var(--top);
+  width: var(--width);
+  border: none;
+  padding: 0;
+}
+
+dialog::backdrop {
+  --tw-backdrop-blur: blur(3px);
+
+  backdrop-filter:
+    var(--tw-backdrop-blur);
+}
+
+.dialog-header {
+
+  --geist-space-5x: 20px;
+
+  padding-inline: var(--geist-space-6x);
+  padding-block: var(--geist-space-5x);
+  gap: var(--geist-space-3x);
+  display: flex;
+}
+
+.dialog-header input {
+
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: .009em;
+  font-weight: 456;
+  flex-grow: 1;
+  background-color: transparent;
+  border: none;
+}
+
+.dialog-header input::placeholder {
+  color: rgb(165, 165, 165);
+  font-feature-settings: "dlig" on, "ss07" on, "calt" off;
+}
+
+.dialog-head-icons {
+
+  gap: var(--geist-space-4x);
+  align-items: center;
+  display: flex;
+}
+
+.dialog-head-icons svg {
+  fill: var(--accents-6);
+}
+
+.selected {
+  fill: none !important;
+}

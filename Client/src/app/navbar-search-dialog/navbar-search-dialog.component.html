@@ -1,0 +1,46 @@
+<dialog #dialogRef>
+  <div class="dialog-wrapper">
+    <div class="dialog-header">
+      <input type="search" placeholder="iOS Apps, Screens, UI Elements, Flows or Keywords...">
+      <div class="dialog-head-icons">
+        <svg class="selected"
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          stroke="white"
+        >
+          <rect
+            x="5"
+            y="2"
+            width="10"
+            height="16"
+            stroke-width="2"
+            stroke-linecap="square"
+            vector-effect="non-scaling-stroke"
+          />
+          <path
+            d="M8 3C8 2.44772 8.44772 2 9 2H11C11.5523 2 12 2.44772 12 3C12 3.55228 11.5523 4 11 4H9C8.44772 4 8 3.55228 8 3Z"
+            stroke-width="2"
+            stroke-linecap="square"
+            vector-effect="non-scaling-stroke"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+        >
+          <path
+            d="M19 15H10.9893C10.9451 15.7154 10.7494 16.4027 10.417 17H14V19H7V17C8.06342 17 8.86869 16.2309 8.98438 15H1V2H19V15ZM3 11H17V4H3V11Z"
+            vector-effect="non-scaling-stroke"
+          />
+        </svg>
+      </div>
+    </div>
+    @if (lastFiveSearches) {
+    <section class="latest-searches"></section>
+    }
+  </div>
+</dialog>
