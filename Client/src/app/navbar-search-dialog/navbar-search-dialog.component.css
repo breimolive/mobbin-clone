@@ -20,6 +20,7 @@ dialog {
   border-radius: var(--radius);
   max-width: var(--max-width);
   margin-top: var(--top);
+  scrollbar-width: none;
   width: var(--width);
   border: none;
   padding: 0;
