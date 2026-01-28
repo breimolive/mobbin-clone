@@ -299,6 +299,7 @@ input, button {
   --glass-text-primary: hsl(0 0% 100%);
   --opacity-gray-8: 0 0% 93% / 8%;
   --opacity-gray-16: 0 0% 93% / 16%;
+  --geist-color-primary: 0 0% 100%;
   --glass-background-secondary: var(--opacity-gray-8);
   --glass-background-secondary-hover: var(--opacity-gray-16);
   --geist-error-light: #f33;
