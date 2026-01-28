@@ -85,15 +85,16 @@ dialog::backdrop {
 
 .content {
 
-  --geist-space-6x: 20px;
-  --sidebar-space: 260px;
-  --geist-page: 1fr;
-
-  grid-template-columns: var(--sidebar-space) var(--geist-page);
-  padding-left: var(--geist-space-6x);
+  grid-template-columns: 260px 1fr;
+  padding-left: 20px;
   display: grid;
 }
 
 .dialog-content-wrapper {
-  padding-top: var(--geist-space-2x)
+
+  padding-inline: var(--geist-space-4x);
+  padding-top: var(--geist-space-2x);
+  row-gap: var(--geist-space-6x);
+  flex-direction: column;
+  display: flex;
 }

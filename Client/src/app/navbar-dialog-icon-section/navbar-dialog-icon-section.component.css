@@ -1,15 +1,11 @@
 .dialog-icon-section-wrapper {
 
-  --geist-space-6x: 20px;
-  --all: 100%;
-
-  padding-inline: var(--geist-space-6x);
   max-height: var(--geist-space-16x);
   background-clip: padding-box;
   box-sizing: border-box;
-  height: var(--all);
   overflow: hidden;
   display: flex;
+  height: 100%;
 }
 
 .dialog-icon-section {
