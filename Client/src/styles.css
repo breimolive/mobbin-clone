@@ -214,6 +214,10 @@ input, button {
     letter-spacing: .009em;
   }
 
+  .text-body-bold {
+    font-weight: 600;
+  }
+
   .text-label {
     letter-spacing: .014em;
     line-height: 20px;
@@ -305,6 +309,7 @@ input, button {
   --dropdown-triangle-stroke: #333;
   --scroller-start: #000;
   --scroller-end: transparent;
+  --rounded-full: 9999px;
   --header-border-bottom: 0 1px 0 0 rgba(255, 255, 255, .1);
   --header-import-flow-background: rgba(17, 17, 17, .8);
   --shadow-smallest: 0 0 0 1px var(--accents-2);
@@ -321,6 +326,7 @@ input, button {
   --geist-foreground-rgb: 255, 255, 255;
   --geist-console-header: #0f0310;
   --geist-console-purple: #8a63d2;
+  --glass-color-primary: 0 0% 100%;
   --geist-console-text-color-default: var(--geist-foreground);
   --geist-console-text-color-blue: #3291ff;
   --geist-console-text-color-pink: #eb367f;

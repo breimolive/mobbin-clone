@@ -4,6 +4,9 @@ import {NavbarDialogIconSectionComponent} from "../navbar-dialog-icon-section/na
 import {
   NavbarDialogScreensSectionComponent
 } from "../navbar-dialog-screens-section/navbar-dialog-screens-section.component";
+import {
+  NavbarDialogUiElementsSectionComponent
+} from "../navbar-dialog-ui-elements-section/navbar-dialog-ui-elements-section.component";
 
 @Component({
   selector: 'app-navbar-search-dialog',
@@ -11,7 +14,8 @@ import {
   imports: [
     NavbarDialogSidebarComponent,
     NavbarDialogIconSectionComponent,
-    NavbarDialogScreensSectionComponent
+    NavbarDialogScreensSectionComponent,
+    NavbarDialogUiElementsSectionComponent
   ],
   styleUrl: './navbar-search-dialog.component.css'
 })

@@ -1,0 +1,32 @@
+.ui-elements {
+  row-gap: var(--geist-space-3x);
+  flex-direction: column;
+  display: flex;
+}
+
+.ui-elements .ui-elements-label {
+
+  color: var(--geist-color-secondary);
+  display: flex;
+}
+
+.ui-elements-container {
+
+  gap: var(--geist-space-2x);
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.ui-elements-container .ui-element {
+
+  background-color: hsl(var(--glass-background-secondary));
+  color: hsl(var(--glass-color-primary));
+  padding-inline: var(--geist-space-4x);
+  padding-block: var(--geist-space-2x);
+  border-radius: var(--rounded-full);
+  cursor: pointer;
+}
+
+.ui-elements-container .ui-element:hover {
+  background-color: hsl(var(--glass-background-secondary-hover));
+}
