@@ -123,6 +123,12 @@ app-navbar-layout-two {
   display: none;
 }
 
+@media (max-width: 1020px) {
+  .navbar-wrapper {
+    --inline: var(--geist-space-6x);
+  }
+}
+
 @media (max-width: 840px) {
 
   app-navbar-layout-one {

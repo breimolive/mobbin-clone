@@ -128,7 +128,7 @@
 }
 
 .icon img {
-  width: 24px;
+  width: var(--geist-space-6x);
 }
 
 .get-pro-button {
@@ -146,9 +146,10 @@
 .scan {
 
   --scan: hsl(0, 0%, 75%);
+  --width: 2px;
 
+  stroke-width: var(--width);
   stroke: var(--scan);
-  stroke-width: 2px;
 }
 
 .head-section {
@@ -176,11 +177,14 @@
 
 .body-section {
 
+  --gap: 1rem;
+
+  padding-inline: var(--geist-space-8x);
+  color: var(--accents-9);
+  width: var(--width);
+  gap: var(--gap);
   display: flex;
-  color: white;
-  gap: 1rem;
-  width: 100vw;
-  padding-inline: 32px;
+
 }
 
 @media (max-width: 1620px) {
