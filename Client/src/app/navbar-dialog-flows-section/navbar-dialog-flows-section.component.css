@@ -1,0 +1,45 @@
+.flows {
+
+  row-gap: var(--geist-space-3x);
+  flex-direction: column;
+  display: flex;
+}
+
+.flows .flows-label {
+
+  color: var(--geist-color-secondary);
+  display: flex;
+}
+
+.flows-wrapper {
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--geist-space-2x);
+  display: grid;
+}
+
+.flow {
+
+  background-color: hsl(var(--glass-background-secondary));
+  color: hsl(var(--glass-color-primary));
+  border-radius: var(--geist-space-4x);
+  padding: var(--geist-space-3x);
+  justify-content: space-between;
+  flex-direction: column;
+  aspect-ratio: 1 / 1;
+  max-height: 118px;
+  text-align: start;
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+}
+
+.flow:hover {
+  background-color: hsl(var(--glass-background-secondary-hover));
+}
+
+.feather {
+
+  stroke: hsl(var(--geist-color-primary));
+  stroke-width: 2px;
+}
