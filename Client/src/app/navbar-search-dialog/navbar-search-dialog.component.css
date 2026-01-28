@@ -44,6 +44,7 @@ dialog::backdrop {
 
 .dialog-header input {
 
+  --geist-space-4x: 16px;
   --spacing: .009em;
   --weight: 456;
 
@@ -60,8 +61,10 @@ dialog::backdrop {
 .dialog-header input::placeholder {
 
   --placeholder-color: rgb(165, 165, 165);
+  --geist-space-4x: 16px;
 
   font-feature-settings: "dlig" on, "ss07" on, "calt" off;
+  font-size: var(--geist-space-4x);
   color: var(--placeholder-color);
 }
 

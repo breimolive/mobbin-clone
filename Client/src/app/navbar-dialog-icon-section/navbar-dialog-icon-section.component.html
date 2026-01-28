@@ -1,11 +1,13 @@
 <div class="dialog-icon-section-wrapper">
   <div class="dialog-icon-section">
     @for (icon of displayedIcons; track icon.id) {
-      <div class="icon-wrapper">
-        <div class="icon transition-opacity">
-          <img [src]="icon.logoUrl" [alt]="icon.name">
+      <div class="another-one">
+        <div class="icon-wrapper">
+          <div class="icon transition-opacity">
+            <img [src]="icon.logoUrl" [alt]="icon.name">
+          </div>
+          <p class="icon-label">{{ icon.name }}</p>
         </div>
-        <p class="icon-label">{{ icon.name }}</p>
       </div>
     }
   </div>

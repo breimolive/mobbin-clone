@@ -21,9 +21,12 @@
 
 .dialog-icon-section .icon-wrapper {
 
+  --radius: 30%;
+
+  border-radius: var(--radius);
   color: var(--accents-9);
   max-width: max-content;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .dialog-icon-section .icon img {
@@ -41,7 +44,7 @@
 
   --transition-type: cubic-bezier(.4, 0, .2, 1);
   --transition-target: transform;
-  --transition-time: .15s;
+  --transition-time: .4s;
 
   transition: var(--transition-target) var(--transition-time) var(--transition-type);
   will-change: var(--transition-target);
@@ -86,3 +89,4 @@
 
   transform: translateY(var(--transform-size));
 }
+
