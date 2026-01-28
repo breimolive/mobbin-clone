@@ -1,13 +1,17 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import {NavbarDialogSidebarComponent} from "../navbar-dialog-sidebar/navbar-dialog-sidebar.component";
 import {NavbarDialogIconSectionComponent} from "../navbar-dialog-icon-section/navbar-dialog-icon-section.component";
+import {
+  NavbarDialogScreensSectionComponent
+} from "../navbar-dialog-screens-section/navbar-dialog-screens-section.component";
 
 @Component({
   selector: 'app-navbar-search-dialog',
   templateUrl: './navbar-search-dialog.component.html',
   imports: [
     NavbarDialogSidebarComponent,
-    NavbarDialogIconSectionComponent
+    NavbarDialogIconSectionComponent,
+    NavbarDialogScreensSectionComponent
   ],
   styleUrl: './navbar-search-dialog.component.css'
 })
