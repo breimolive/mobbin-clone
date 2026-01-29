@@ -93,6 +93,7 @@ dialog::backdrop {
 
 .dialog-content-wrapper {
 
+  padding-bottom: var(--geist-space-medium);
   padding-inline: var(--geist-space-4x);
   padding-top: var(--geist-space-2x);
   row-gap: var(--geist-space-6x);

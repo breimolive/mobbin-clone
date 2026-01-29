@@ -73,7 +73,7 @@
   --inset-size: 0 0 0 0.5;
 
   --shadow-logo-inset: inset var(--inset-size) var(--inset-color);
-  --transform-size: -12px;
+  --transform-size: var(--geist-space-3x-negative);
 
   transform: translateY(var(--transform-size));
   inset: var(--shadow-logo-inset);
@@ -81,7 +81,7 @@
 
 .dialog-icon-section .icon-wrapper:hover .icon-label {
 
-  --transform-size: -16px;
+  --transform-size: var(--geist-space-4x-negative);
 
   transform: translateY(var(--transform-size));
 }

@@ -374,6 +374,7 @@ input, button {
   --geist-gap-section: var(--geist-space-small);
   --geist-space-negative: -4px;
   --geist-space-2x-negative: -8px;
+  --geist-space-3x-negative: -12px;
   --geist-space-4x-negative: -16px;
   --geist-space-8x-negative: -32px;
   --geist-space-16x-negative: -64px;
