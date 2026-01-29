@@ -33,6 +33,15 @@ dialog::backdrop {
     var(--tw-backdrop-blur);
 }
 
+.dialog-wrapper {
+
+  background-color: var(--geist-dialog);
+  position: sticky;
+  overflow: hidden;
+  z-index: 1000;
+  top: 0;
+}
+
 .dialog-header {
 
   --geist-space-5x: 20px;

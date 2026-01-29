@@ -1,11 +1,16 @@
 .sidebar {
 
+  background-color: var(--geist-dialog);
   padding-top: var(--geist-space-2x);
   flex-direction: column;
   padding-bottom: 20px;
   align-items: stretch;
+  position: sticky;
+  overflow: hidden;
+  z-index: 1000;
   display: flex;
   row-gap: 1px;
+  top: 55px;
 }
 
 .sidebar button {
