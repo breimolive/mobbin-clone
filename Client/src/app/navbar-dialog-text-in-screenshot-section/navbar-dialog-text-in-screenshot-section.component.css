@@ -1,0 +1,32 @@
+.text-in-screens {
+  row-gap: var(--geist-space-3x);
+  flex-direction: column;
+  display: flex;
+}
+
+.text-in-screens .text-in-screens-label {
+
+  color: var(--geist-color-secondary);
+  display: flex;
+}
+
+.text-in-screens-container {
+
+  gap: var(--geist-space-2x);
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.text-in-screens-container .text-in-screen {
+
+  background-color: hsl(var(--glass-background-secondary));
+  color: hsl(var(--glass-color-primary));
+  padding-inline: var(--geist-space-4x);
+  padding-block: var(--geist-space-2x);
+  border-radius: var(--rounded-full);
+  cursor: pointer;
+}
+
+.text-in-screens-container .text-in-screen:hover {
+  background-color: hsl(var(--glass-background-secondary-hover));
+}
