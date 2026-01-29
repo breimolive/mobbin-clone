@@ -8,6 +8,9 @@ import {
   NavbarDialogUiElementsSectionComponent
 } from "../navbar-dialog-ui-elements-section/navbar-dialog-ui-elements-section.component";
 import {NavbarDialogFlowsSectionComponent} from "../navbar-dialog-flows-section/navbar-dialog-flows-section.component";
+import {
+  NavbarDialogTextInScreenshotSectionComponent
+} from "../navbar-dialog-text-in-screenshot-section/navbar-dialog-text-in-screenshot-section.component";
 
 @Component({
   selector: 'app-navbar-search-dialog',
@@ -17,7 +20,8 @@ import {NavbarDialogFlowsSectionComponent} from "../navbar-dialog-flows-section/
     NavbarDialogIconSectionComponent,
     NavbarDialogScreensSectionComponent,
     NavbarDialogUiElementsSectionComponent,
-    NavbarDialogFlowsSectionComponent
+    NavbarDialogFlowsSectionComponent,
+    NavbarDialogTextInScreenshotSectionComponent
   ],
   styleUrl: './navbar-search-dialog.component.css'
 })
