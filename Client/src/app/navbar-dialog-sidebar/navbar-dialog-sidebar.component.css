@@ -1,14 +1,11 @@
 .sidebar {
 
-  --geist-space-6x: 20px;
-  --gap: 1px;
-
-  padding-bottom: var(--geist-space-6x);
   padding-top: var(--geist-space-2x);
   flex-direction: column;
+  padding-bottom: 20px;
   align-items: stretch;
-  row-gap: var(--gap);
   display: flex;
+  row-gap: 1px;
 }
 
 .sidebar button {
@@ -26,23 +23,18 @@
 }
 
 .sidebar button:hover {
-  --geist-selected-button: hsl(0 0% 27%);
-
-  background-color: var(--geist-selected-button);
+  background-color: hsl(var(--glass-background-secondary));
 }
 
 .sidebar button svg,
 .sidebar button path {
 
   --stroke-color: hsl(0 0% 68%);
-  --stroke: 2px;
 
   stroke: var(--stroke-color);
   stroke-width: 2px;
 }
 
 .sidebar .selected {
-  --geist-selected-button: hsl(0 0% 27%);
-
-  background-color: var(--geist-selected-button) !important;
+  background-color: hsl(var(--glass-background-secondary));
 }
