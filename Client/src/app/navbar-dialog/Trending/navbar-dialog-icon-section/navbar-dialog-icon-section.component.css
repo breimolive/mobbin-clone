@@ -53,13 +53,13 @@
   --spacing: .017em;
   --weight: 600;
 
-  max-width: var(--geist-space-16x);
+  color: hsl(var(--glass-text-primary));
   line-height: var(--geist-space-4x);
+  max-width: var(--geist-space-16x);
   font-size: var(--geist-space-3x);
   letter-spacing: var(--spacing);
   font-weight: var(--weight);
   text-overflow: ellipsis;
-  color: var(--accents-7);
   white-space: nowrap;
   text-align: center;
   overflow: hidden;

@@ -7,6 +7,7 @@ import { NavbarSearchDialogComponent } from "../navbar-search-dialog/navbar-sear
   imports: [
     NavbarSearchDialogComponent
   ],
+  standalone: true,
   styleUrls: ['./navbar-layout-one.component.css',
     '../navbar/navbar.component.css'
   ]

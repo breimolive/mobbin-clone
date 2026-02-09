@@ -20,7 +20,7 @@
 
 .screens-wrapper > * {
 
-  color: var(--glass-text-primary);
+  color: hsl(var(--glass-text-primary));
   font-size: var(--geist-space-4x);
 }
 

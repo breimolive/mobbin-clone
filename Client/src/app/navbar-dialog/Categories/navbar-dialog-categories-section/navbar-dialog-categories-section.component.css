@@ -1,0 +1,43 @@
+.categories-wrapper {
+
+  flex-direction: column;
+  display: flex;
+  gap: 8px;
+}
+
+.categories-label {
+
+  color: hsl(var(--glass-text-secondary));
+  padding-inline: var(--geist-space-3x);
+  display: flex;
+}
+
+button {
+
+  padding-inline: var(--geist-space-3x);
+  padding-block: var(--geist-space-2x);
+  border-radius: var(--geist-space-3x);
+  justify-content: space-between;
+  background-color: transparent;
+  align-items: center;
+  flex-direction: row;
+  cursor: pointer;
+  display: flex;
+  border: none;
+  width: 100%;
+}
+
+button p {
+  color: hsl(var(--glass-text-primary));
+}
+
+button:hover {
+  background-color: hsl(var(--glass-background-primary-hover));
+}
+
+button span {
+  color: hsl(var(--glass-text-secondary));
+  letter-spacing: .014em;
+  line-height: 20px;
+  font-size: 14px;
+}

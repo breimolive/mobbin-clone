@@ -10,6 +10,7 @@ interface iconDto {
 @Component({
   selector: 'app-navbar-dialog-icon-section',
   templateUrl: './navbar-dialog-icon-section.component.html',
+  standalone: true,
   styleUrl: './navbar-dialog-icon-section.component.css'
 })
 export class NavbarDialogIconSectionComponent implements OnInit {

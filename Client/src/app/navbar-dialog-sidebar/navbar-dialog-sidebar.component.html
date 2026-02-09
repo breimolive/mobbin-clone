@@ -1,5 +1,5 @@
 <div class="sidebar">
-  <button class="selected">
+  <button class="sidebar-button selected" (click)='changeMode("Trending")'>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="20"
@@ -18,7 +18,7 @@
     </svg>
     <span class="text-body-bold">Trending</span>
   </button>
-  <button>
+  <button class="sidebar-button" (click)='changeMode("Categories")'>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="20"
@@ -45,7 +45,7 @@
     </svg>
     <span>Categories</span>
   </button>
-  <button>
+  <button class="sidebar-button" (click)='changeMode("Screens")'>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="20"
@@ -69,7 +69,7 @@
     </svg>
     <span>Screens</span>
   </button>
-  <button>
+  <button class="sidebar-button" (click)='changeMode("UI Elements")'>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="20"
@@ -90,7 +90,7 @@
     </svg>
     <span>UI Elements</span>
   </button>
-  <button>
+  <button class="sidebar-button" (click)='changeMode("Flows")'>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="20"

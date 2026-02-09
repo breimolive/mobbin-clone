@@ -277,7 +277,7 @@ input, button {
   --geist-background: #000;
   --accents-9: #fafafa;
   --accents-8: #eaeaea;
-  --accents-7: #dddddd;
+  --accents-7: #c3c3c3;
   --accents-temp-for-7: #d1d1d1;
   --accents-6: #999;
   --accents-5: #888;
@@ -296,7 +296,9 @@ input, button {
   --geist-link-color: var(--ds-blue-900);
   --geist-marketing-gray: var(--accents-1);
   --geist-code: var(--geist-foreground);
-  --glass-text-primary: hsl(0 0% 100%);
+  --glass-text-primary: 0 0% 100%;
+  --glass-text-secondary: 0 0% 68%;
+  --glass-background-primary-hover: 0 0% 93%/8%;
   --opacity-gray-8: 0 0% 93% / 8%;
   --opacity-gray-16: 0 0% 93% / 16%;
   --geist-color-primary: 0 0% 100%;

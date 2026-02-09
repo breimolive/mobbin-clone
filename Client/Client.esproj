@@ -7,4 +7,8 @@
     <!-- Folder where production build objects will be placed -->
     <BuildOutputFolder>$(MSBuildProjectDirectory)\dist\angulardotnettemplate.client\browser\</BuildOutputFolder>
   </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\app\navbar-dialog\Categories\" />
+    <Folder Include="src\app\navbar-dialog\Trending\" />
+  </ItemGroup>
 </Project>
