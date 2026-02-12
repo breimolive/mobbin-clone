@@ -214,6 +214,12 @@ input, button {
     letter-spacing: .009em;
   }
 
+  .compact-text {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: .014em;
+  }
+
   .text-body-bold {
     font-weight: 600;
   }
@@ -285,6 +291,7 @@ input, button {
   --accents-3: #444;
   --accents-2: #333;
   --accents-1: #111;
+  --glass-background-primary: 0 0% 15%/88%;
   --geist-color-secondary: hsl(0 0% 68%);
   --geist-card: hsl(0, 0%, 15%);
   --geist-card-hover: hsl(0, 0%, 20%);
@@ -355,6 +362,7 @@ input, button {
   --geist-space-2x: 8px;
   --geist-space-3x: 12px;
   --geist-space-4x: 16px;
+  --geist-space-5x: 20px;
   --geist-space-6x: 24px;
   --geist-space-8x: 32px;
   --geist-space-10x: 40px;
