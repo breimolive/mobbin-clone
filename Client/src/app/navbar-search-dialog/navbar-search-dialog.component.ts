@@ -18,7 +18,7 @@ import {
 import {
   NavbarDialogCategoriesSectionComponent
 } from "../navbar-dialog/Categories/navbar-dialog-categories-section/navbar-dialog-categories-section.component";
-import {buttonData} from "../api.service";
+import {buttonCategoryData} from "../api.service";
 import {
   NavbarDialogCategorySideboxComponent
 } from "../navbar-dialog/Categories/navbar-dialog-category-sidebox/navbar-dialog-category-sidebox.component";
@@ -49,11 +49,11 @@ type SidebarSelected = 'Trending' | 'Categories' | 'Screens' | 'UI Elements' | '
   styleUrl: './navbar-search-dialog.component.css'
 })
 export class NavbarSearchDialogComponent {
-  @Output() hover = new EventEmitter<buttonData | null>();
+  @Output() hover = new EventEmitter<buttonCategoryData | null>();
   sideboxes = document.getElementsByClassName("category-sidebox");
   @ViewChild('dialogRef') imageDialog!: ElementRef<HTMLDialogElement>;
   lastFiveSearches: string[] | null = null;
-  buttonSelected: buttonData | null = null;
+  buttonSelected: buttonCategoryData | null = null;
   mode: SidebarSelected = "Trending";
 
   private readonly backdropClickHandler = (event: MouseEvent) => {
@@ -78,7 +78,7 @@ export class NavbarSearchDialogComponent {
     });
   }
 
-  itsHovering(button: buttonData | null) {
+  itsHovering(button: buttonCategoryData | null) {
     this.buttonSelected = button;
 
     /*

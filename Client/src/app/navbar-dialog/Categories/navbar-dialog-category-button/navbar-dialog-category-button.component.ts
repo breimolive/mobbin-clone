@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {buttonData} from "../../../api.service";
+import {buttonCategoryData} from "../../../api.service";
 
 @Component({
   selector: 'app-navbar-dialog-category-button',
@@ -9,8 +9,8 @@ import {buttonData} from "../../../api.service";
 })
 export class NavbarDialogCategoryButtonComponent {
 
-  @Input() button: buttonData | null = null;
-  @Output() hover = new EventEmitter<buttonData | null>();
+  @Input() button: buttonCategoryData | null = null;
+  @Output() hover = new EventEmitter<buttonCategoryData | null>();
 
   onEnter() {
     this.hover.emit(this.button);

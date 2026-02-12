@@ -9,14 +9,21 @@ interface UserDto {
   password: string;
 }
 
-export interface buttonData {
+export interface buttonCategoryData {
   id: string;
   title: string;
   amount: string;
-  category: Category;
+  category: categoriesCategory;
 }
 
-export interface Category {
+export interface buttonScreensData {
+  id: string;
+  title: string;
+  amount: string;
+  category: screensCategory;
+}
+
+export interface categoriesCategory {
   primaryPhoto: string;
   primaryPhotoAlt: string;
   secondaryPhoto: string;
@@ -25,6 +32,15 @@ export interface Category {
   PrimarySubPhotoAlt: string;
   secondarySubPhoto: string;
   secondarySubPhotoAlt: string;
+  description: string;
+}
+export interface screensCategory {
+  primaryPhoto: string;
+  primaryPhotoAlt: string;
+  secondaryPhoto: string;
+  secondaryPhotoAlt: string;
+  TertiaryPhoto: string;
+  TertiaryPhotoAlt: string;
   description: string;
 }
 

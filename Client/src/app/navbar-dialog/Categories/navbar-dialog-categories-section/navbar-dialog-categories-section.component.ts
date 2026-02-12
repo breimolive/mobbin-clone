@@ -2,7 +2,7 @@ import {Component, EventEmitter, Output} from '@angular/core';
 import {
   NavbarDialogCategoryButtonComponent
 } from "../navbar-dialog-category-button/navbar-dialog-category-button.component";
-import {buttonData} from "../../../api.service";
+import {buttonCategoryData} from "../../../api.service";
 
 @Component({
   selector: 'app-navbar-dialog-categories-section',
@@ -15,10 +15,10 @@ import {buttonData} from "../../../api.service";
 })
 export class NavbarDialogCategoriesSectionComponent {
 
-  buttons: buttonData[] | null = null;
+  buttons: buttonCategoryData[] | null = null;
   @Output() clicked = new EventEmitter();
 
-  onHover(button: buttonData | null) {
+  onHover(button: buttonCategoryData | null) {
     this.clicked.emit(button);
   }
 
