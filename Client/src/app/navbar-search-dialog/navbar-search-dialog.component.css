@@ -14,6 +14,8 @@ dialog {
   --top: 8rem;
 
 
+
+
   height: min(calc(var(--height-min-calc-value) + var(--geist-space-2x)), calc(var(--geist-page-height) - var(--searchbar-top) - var(--searchbar-min-bottom) + var(--geist-space-2x)));
   box-shadow: 0 var(--vertical-offset) var(--blur-offset) var(--geist-box-shadow-color);
   background-color: var(--geist-dialog);
@@ -22,6 +24,7 @@ dialog {
   margin-top: var(--top);
   scrollbar-width: none;
   width: var(--width);
+  overflow: visible;
   border: none;
   padding: 0;
 }
@@ -36,6 +39,7 @@ dialog::backdrop {
 .dialog-wrapper {
 
   background-color: var(--geist-dialog);
+  border-radius: var(--radius);
   position: sticky;
   overflow: visible;
   z-index: 1000;
@@ -100,6 +104,11 @@ dialog::backdrop {
   display: grid;
 }
 
+.dialog-content-wrapper-container {
+  overflow: hidden;
+  height: 662px;
+}
+
 .dialog-content-wrapper {
 
   padding-bottom: var(--geist-space-medium);
@@ -117,29 +126,26 @@ dialog::backdrop {
   --geist-button: rgb(255, 255, 255);
   --transition-time: 0.3s;
   --transition-type: ease;
-  --geist-space-4x: 12px;
-  --geist-space-3x: 10px;
   --vertical-offset: 4px;
   --blur-offset: 6px;
   --radius: 6px;
-  --half: 50%;
 
   transition: opacity var(--transition-time) var(--transition-type), transform var(--transition-time) var(--transition-type);
   box-shadow: 0 var(--vertical-offset) var(--blur-offset) var(--geist-box-shadow-color);
   background-color: var(--geist-button);
-  border-radius: var(--geist-space-3x);
   padding: var(--radius) var(--radius);
-  font-size: var(--geist-space-4x);
+  font-size: var(--geist-space-3x);
   color: var(--geist-button-color);
   transform: translateX(-50%);
   text-decoration: none;
+  border-radius: 10px;
   position: absolute;
   visibility: hidden;
   width: max-content;
-  left: var(--half);
   font-weight: 600;
   opacity: 0;
   top: 140%;
+  left: 50%;
 }
 
 .icon:hover .hover-button {
@@ -157,4 +163,11 @@ dialog::backdrop {
 .Web {
   top: 45px;
   left: 96%;
+}
+
+app-navbar-dialog-category-sidebox {
+  left: calc(anchor(--dialog right) + 1rem);
+  position-visibility: anchors-visible;
+  top: anchor(--button top);
+  position: absolute;
 }

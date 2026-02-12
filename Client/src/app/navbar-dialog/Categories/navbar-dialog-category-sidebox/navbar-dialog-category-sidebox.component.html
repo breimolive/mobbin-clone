@@ -1,0 +1,41 @@
+<div class="category-sidebox">
+  <div class="category-content-wrapper">
+    <div class="content">
+      @if (button != null) {
+        <div class="primary-image-wrapper-wrapper-wrapper">
+          <div class="primary-image-wrapper-wrapper">
+            <div class="primary-image-wrapper">
+              <img [src]="button.category.primaryPhoto" [alt]="button.category.primaryPhotoAlt" class="category-image">
+            </div>
+          </div>
+        </div>
+        <div class="primary-sub-image-wrapper-wrapper">
+          <div class="primary-sub-image-wrapper">
+            <img [src]="button.category.primarySubPhoto" [alt]="button.category.PrimarySubPhotoAlt" class="category-sub-image">
+          </div>
+        </div>
+      }
+    </div>
+    <div class="content">
+      @if (button != null) {
+        <div class="secondary-image-wrapper-wrapper-wrapper">
+          <div class="secondary-image-wrapper-wrapper">
+            <div class="secondary-image-wrapper">
+              <img [src]="button.category.secondaryPhoto" [alt]="button.category.secondaryPhotoAlt" class="category-image">
+            </div>
+          </div>
+        </div>
+        <div class="secondary-sub-image-wrapper-wrapper">
+          <div class="secondary-sub-image-wrapper">
+            <img [src]="button.category.secondarySubPhoto" [alt]="button.category.secondarySubPhotoAlt" class="category-sub-image">
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+  <div class="category-text-wrapper">
+    @if (button != null) {
+      <p class="compact-text">{{ button.category.description }}</p>
+    }
+  </div>
+</div>

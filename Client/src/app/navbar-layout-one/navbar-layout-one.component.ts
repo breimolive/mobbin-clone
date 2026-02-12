@@ -1,5 +1,9 @@
 import { Component, ViewChild } from '@angular/core';
 import { NavbarSearchDialogComponent } from "../navbar-search-dialog/navbar-search-dialog.component";
+import {
+  NavbarDialogCategorySideboxComponent
+} from "../navbar-dialog/Categories/navbar-dialog-category-sidebox/navbar-dialog-category-sidebox.component";
+import {buttonData} from "../api.service";
 
 @Component({
   selector: 'app-navbar-layout-one',
@@ -14,6 +18,8 @@ import { NavbarSearchDialogComponent } from "../navbar-search-dialog/navbar-sear
 })
 export class NavbarLayoutOneComponent {
   @ViewChild('NavbarSearchDialogComponent') searchDialog: NavbarSearchDialogComponent | undefined;
+
+
   openDialog() {
     this.searchDialog?.show();
   }

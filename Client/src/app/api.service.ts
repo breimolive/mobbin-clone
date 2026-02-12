@@ -9,6 +9,25 @@ interface UserDto {
   password: string;
 }
 
+export interface buttonData {
+  id: string;
+  title: string;
+  amount: string;
+  category: Category;
+}
+
+export interface Category {
+  primaryPhoto: string;
+  primaryPhotoAlt: string;
+  secondaryPhoto: string;
+  secondaryPhotoAlt: string;
+  primarySubPhoto: string;
+  PrimarySubPhotoAlt: string;
+  secondarySubPhoto: string;
+  secondarySubPhotoAlt: string;
+  description: string;
+}
+
 interface CreateUserDto {
   gmail: string;
   password: string;

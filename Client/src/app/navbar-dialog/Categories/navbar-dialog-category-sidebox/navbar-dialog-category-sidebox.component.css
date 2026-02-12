@@ -1,0 +1,126 @@
+.category-sidebox {
+  background-color: hsl(var(--glass-background-primary));
+  backdrop-filter: var(--geist-space-6x);
+  width: clamp(18.5rem, 310px, 30.5rem);
+  border-radius: var(--geist-space-5x);
+  padding: var(--geist-space-4x);
+  gap: var(--geist-space-4x);
+  flex-direction: column;
+  text-align: start;
+  display: flex;
+}
+
+.category-content-wrapper {
+
+  gap: var(--geist-space-3x);
+  grid-auto-flow: column;
+  display: grid;
+}
+
+.content {
+  background-color: hsl(var(--glass-background-secondary));
+  padding-inline: var(--geist-space-5x);
+  border-radius: var(--geist-space-4x);
+  padding-top: var(--geist-space-5x);
+  justify-content: center;
+  overflow: hidden;
+  display: flex;
+  height: 9rem;
+  width: 100%;
+}
+
+.primary-image-wrapper-wrapper-wrapper {
+  width: 104px;
+}
+
+.primary-image-wrapper-wrapper {
+
+  position: relative;
+  width: 100%;
+  padding-bottom: 216.196%;
+}
+
+.primary-image-wrapper {
+
+  position: absolute;
+  inset: 0;
+}
+
+.category-image {
+
+  background-color: hsl(0 0% 93%/16%);
+  object-fit: cover;
+  border-radius: var(--geist-space-3x);
+  border-width: 0;
+  width: 100%;
+  height: 100%;
+  color: transparent;
+}
+
+.primary-sub-image-wrapper-wrapper {
+
+  --shadow: 0 12px 80px hsl(0 0% 0%/16%);
+
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-shadow: var(--shadow);
+  --tw-shadow-colored: var(--shadow);
+  border-radius: var(--geist-space-3x);
+  position: absolute;
+  z-index: 10;
+  top: 32px;
+  left: 32px;
+}
+
+.primary-sub-image-wrapper {
+  position: relative;
+  border-radius: 30%;
+  height: 40px;
+  width: 40px;
+}
+
+.category-sub-image {
+  transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+  transition-property: opacity;
+  transition-duration: .15s;
+  border-radius: 30%;
+  color: transparent;
+  height: 100%;
+  width: 100%;
+}
+
+.secondary-image-wrapper-wrapper-wrapper {
+  width: 104px;
+}
+
+.secondary-image-wrapper-wrapper {
+  padding-bottom: 216.196%;
+  position: relative;
+  width: 100%;
+}
+
+.secondary-image-wrapper {
+
+  position: absolute;
+  inset: 0;
+}
+
+.secondary-sub-image-wrapper-wrapper {
+
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  border-radius: var(--geist-space-3x);
+  position: absolute;
+  z-index: 10;
+  left: 175px;
+  top: 32px;
+}
+
+.secondary-sub-image-wrapper {
+  position: relative;
+  border-radius: 30%;
+  height: 40px;
+  width: 40px;
+}
+
+.category-text-wrapper p {
+  color: hsl(var(--glass-text-secondary));
+}
