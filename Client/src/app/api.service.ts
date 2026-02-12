@@ -9,6 +9,12 @@ interface UserDto {
   password: string;
 }
 
+export interface screenData {
+  id: string;
+  title: string;
+  buttons: buttonScreensData[];
+}
+
 export interface buttonCategoryData {
   id: string;
   title: string;
