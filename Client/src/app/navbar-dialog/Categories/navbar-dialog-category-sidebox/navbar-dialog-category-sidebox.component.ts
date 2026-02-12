@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {buttonData} from "../../../api.service";
+import {buttonCategoryData} from "../../../api.service";
 
 @Component({
   selector: 'app-navbar-dialog-category-sidebox',
@@ -9,5 +9,5 @@ import {buttonData} from "../../../api.service";
 })
 export class NavbarDialogCategorySideboxComponent {
 
-  @Input() button: buttonData | null = null;
+  @Input() button: buttonCategoryData | null = null;
 }

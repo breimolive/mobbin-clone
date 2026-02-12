@@ -3,7 +3,7 @@ import { NavbarSearchDialogComponent } from "../navbar-search-dialog/navbar-sear
 import {
   NavbarDialogCategorySideboxComponent
 } from "../navbar-dialog/Categories/navbar-dialog-category-sidebox/navbar-dialog-category-sidebox.component";
-import {buttonData} from "../api.service";
+import {buttonCategoryData} from "../api.service";
 
 @Component({
   selector: 'app-navbar-layout-one',
