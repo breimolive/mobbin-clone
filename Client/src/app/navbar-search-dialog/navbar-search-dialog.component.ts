@@ -22,6 +22,10 @@ import {buttonData} from "../api.service";
 import {
   NavbarDialogCategorySideboxComponent
 } from "../navbar-dialog/Categories/navbar-dialog-category-sidebox/navbar-dialog-category-sidebox.component";
+import {AppModule} from "../app.module";
+import {
+  NavbarDialogScreensContentSectionComponent
+} from "../navbar-dialog-screens-content-section/navbar-dialog-screens-content-section.component";
 
 type SidebarSelected = 'Trending' | 'Categories' | 'Screens' | 'UI Elements' | 'Flows';
 
@@ -37,7 +41,9 @@ type SidebarSelected = 'Trending' | 'Categories' | 'Screens' | 'UI Elements' | '
     NavbarDialogTextInScreenshotSectionComponent,
     NavbarDialogCategoriesSectionComponent,
     NavbarDialogCategorySideboxComponent,
-    NavbarDialogSidebarComponent
+    NavbarDialogSidebarComponent,
+    AppModule,
+    NavbarDialogScreensContentSectionComponent
   ],
   standalone: true,
   styleUrl: './navbar-search-dialog.component.css'
