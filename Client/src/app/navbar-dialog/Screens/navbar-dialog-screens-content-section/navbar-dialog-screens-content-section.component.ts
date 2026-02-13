@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { screenData } from "../api.service";
-import { CommonModule } from "@angular/common";
+import { screenData } from "../../../api.service";
 import {
   NavbarDialogScreenButtonComponent
 } from "../navbar-dialog-screen-button/navbar-dialog-screen-button.component";

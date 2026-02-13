@@ -9,6 +9,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="src\app\navbar-dialog\Categories\" />
+    <Folder Include="src\app\navbar-dialog\Screens\" />
     <Folder Include="src\app\navbar-dialog\Trending\" />
   </ItemGroup>
 </Project>

@@ -25,7 +25,7 @@ import {
 import { CommonModule } from '@angular/common';
 import {
   NavbarDialogScreensContentSectionComponent
-} from "../navbar-dialog-screens-content-section/navbar-dialog-screens-content-section.component";
+} from "../navbar-dialog/Screens/navbar-dialog-screens-content-section/navbar-dialog-screens-content-section.component";
 
 type SidebarSelected = 'Trending' | 'Categories' | 'Screens' | 'UI Elements' | 'Flows';
 
