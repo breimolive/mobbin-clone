@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { buttonScreensData } from "../api.service";
+import { buttonScreensData } from "../../../api.service";
 
 @Component({
   selector: 'app-navbar-dialog-screen-button',
