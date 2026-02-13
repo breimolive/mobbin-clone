@@ -1,4 +1,4 @@
-import {Component, ElementRef, EventEmitter, Output, ViewChild} from '@angular/core';
+import { Component, ElementRef, EventEmitter, Output, ViewChild } from '@angular/core';
 import NavbarDialogSidebarComponent from "../navbar-dialog-sidebar/navbar-dialog-sidebar.component";
 import {
   NavbarDialogIconSectionComponent
@@ -22,7 +22,7 @@ import buttonCategoryData from "../api.service";
 import {
   NavbarDialogCategorySideboxComponent
 } from "../navbar-dialog/Categories/navbar-dialog-category-sidebox/navbar-dialog-category-sidebox.component";
-import {AppModule} from "../app.module";
+import { CommonModule } from '@angular/common';
 import {
   NavbarDialogScreensContentSectionComponent
 } from "../navbar-dialog-screens-content-section/navbar-dialog-screens-content-section.component";
@@ -42,7 +42,7 @@ type SidebarSelected = 'Trending' | 'Categories' | 'Screens' | 'UI Elements' | '
     NavbarDialogCategoriesSectionComponent,
     NavbarDialogCategorySideboxComponent,
     NavbarDialogSidebarComponent,
-    AppModule,
+    CommonModule,
     NavbarDialogScreensContentSectionComponent
   ],
   standalone: true,
