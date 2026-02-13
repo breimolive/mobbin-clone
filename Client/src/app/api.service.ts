@@ -15,12 +15,14 @@ export interface screenData {
   buttons: buttonScreensData[];
 }
 
-export interface buttonCategoryData {
+interface buttonCategoryData {
   id: string;
   title: string;
   amount: string;
   category: categoriesCategory;
 }
+
+export default buttonCategoryData
 
 export interface buttonScreensData {
   id: string;

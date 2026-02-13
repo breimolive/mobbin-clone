@@ -18,7 +18,7 @@ import {
 import {
   NavbarDialogCategoriesSectionComponent
 } from "../navbar-dialog/Categories/navbar-dialog-categories-section/navbar-dialog-categories-section.component";
-import {buttonCategoryData} from "../api.service";
+import buttonCategoryData from "../api.service";
 import {
   NavbarDialogCategorySideboxComponent
 } from "../navbar-dialog/Categories/navbar-dialog-category-sidebox/navbar-dialog-category-sidebox.component";

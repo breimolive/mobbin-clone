@@ -2,7 +2,7 @@ import {Component, EventEmitter, Output} from '@angular/core';
 import {
   NavbarDialogCategoryButtonComponent
 } from "../navbar-dialog-category-button/navbar-dialog-category-button.component";
-import {buttonCategoryData} from "../../../api.service";
+import buttonCategoryData from "../../../api.service";
 
 @Component({
   selector: 'app-navbar-dialog-categories-section',

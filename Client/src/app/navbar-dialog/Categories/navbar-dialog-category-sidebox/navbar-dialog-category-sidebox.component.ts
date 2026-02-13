@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {buttonCategoryData} from "../../../api.service";
+import buttonCategoryData from "../../../api.service";
 
 @Component({
   selector: 'app-navbar-dialog-category-sidebox',
