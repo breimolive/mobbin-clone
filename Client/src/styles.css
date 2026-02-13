@@ -109,25 +109,17 @@ input, button {
   }
 
   body {
-
-    --text-primary: var(--neutral-0);
-    --background-primary: #141414;
-    --neutral-0: 0 0% 100%;
-    --tw-bg-opacity: 1;
-    --all: 100%;
-
-
-    background-color: var(--background-primary);
     scroll-padding-top: var(--header-height);
     font-family: saans, calibri, sans-serif;
     padding-inline: var(--geist-space-3x);
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    -moz-text-size-adjust: var(--all);
-    text-size-adjust: var(--all);
-    color: var(--text-primary);
+    -moz-text-size-adjust: 100%;
+    background-color: #141414;
     justify-content: center;
+    text-size-adjust: 100%;
     scrollbar-width: none;
+    color: hsl(0 0% 100%);
     overflow-x: hidden;
     display: flex;
     padding: 0;

@@ -7,14 +7,12 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import {ReactiveFormsModule} from "@angular/forms";
-import { NavbarDialogScreenButtonComponent } from './navbar-dialog-screen-button/navbar-dialog-screen-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     NotFoundComponent,
-    NavbarDialogScreenButtonComponent
   ],
   bootstrap: [AppComponent], imports: [BrowserModule,
     AppRoutingModule, ReactiveFormsModule],

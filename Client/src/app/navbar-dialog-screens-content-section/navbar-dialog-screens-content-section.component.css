@@ -1,0 +1,29 @@
+.screens-wrapper {
+  scrollbar-width: none;
+  max-height: 630px;
+  overflow: auto;
+}
+
+.screens-secondary-wrapper {
+
+  row-gap: var(--geist-space-6x);
+  flex-direction: column;
+  display: flex;
+}
+
+.screen-wrapper {
+  row-gap: var(--geist-space-2x);
+  flex-direction: column;
+  display: flex;
+}
+
+.button-wrapper {
+  scrollbar-width: none;
+  overflow: auto;
+}
+
+.screen-label {
+  color: hsl(var(--glass-text-secondary));
+  padding-inline: var(--geist-space-3x);
+  display: flex;
+}

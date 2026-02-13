@@ -1,9 +1,11 @@
-import {Component, EventEmitter, Input, Output} from '@angular/core';
-import {buttonScreensData} from "../api.service";
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { buttonScreensData } from "../api.service";
 
 @Component({
   selector: 'app-navbar-dialog-screen-button',
-  standalone: false,
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './navbar-dialog-screen-button.component.html',
   styleUrl: './navbar-dialog-screen-button.component.css'
 })
