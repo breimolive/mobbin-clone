@@ -9,6 +9,12 @@ interface UserDto {
   password: string;
 }
 
+export interface screenData {
+  id: string;
+  title: string;
+  buttons: buttonScreensData[];
+}
+
 export interface buttonCategoryData {
   id: string;
   title: string;
@@ -39,8 +45,8 @@ export interface screensCategory {
   primaryPhotoAlt: string;
   secondaryPhoto: string;
   secondaryPhotoAlt: string;
-  TertiaryPhoto: string;
-  TertiaryPhotoAlt: string;
+  tertiaryPhoto: string;
+  tertiaryPhotoAlt: string;
   description: string;
 }
 
