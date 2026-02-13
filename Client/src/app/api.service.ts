@@ -45,8 +45,8 @@ export interface screensCategory {
   primaryPhotoAlt: string;
   secondaryPhoto: string;
   secondaryPhotoAlt: string;
-  TertiaryPhoto: string;
-  TertiaryPhotoAlt: string;
+  tertiaryPhoto: string;
+  tertiaryPhotoAlt: string;
   description: string;
 }
 
