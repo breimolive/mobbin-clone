@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { screenData } from "../../../api.service";
+import {Component, EventEmitter, Output} from '@angular/core';
+import buttonCategoryData, {buttonScreensData, screenData} from "../../../api.service";
 import {
   NavbarDialogScreenButtonComponent
 } from "../navbar-dialog-screen-button/navbar-dialog-screen-button.component";
@@ -18,6 +18,7 @@ import {
 })
 export class NavbarDialogScreensContentSectionComponent {
 
+  @Output() clicked = new EventEmitter();
   screens: screenData[] | null = null;
   constructor() {
 
@@ -279,5 +280,9 @@ export class NavbarDialogScreensContentSectionComponent {
         ],
       }
     ];
+  }
+
+  onHover(button: buttonScreensData | null) {
+    this.clicked.emit(button);
   }
 }

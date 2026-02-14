@@ -165,9 +165,11 @@ dialog::backdrop {
   left: 96%;
 }
 
-app-navbar-dialog-category-sidebox {
-  left: calc(anchor(--dialog right) + 1rem);
-  position-visibility: anchors-visible;
-  top: anchor(--button top);
+app-navbar-dialog-category-sidebox,
+app-navbar-dialog-screen-sidebox {
+  left: calc(anchor(right) + 2rem);
+  position-anchor: --button;
   position: absolute;
+  top: anchor(top);
 }
+

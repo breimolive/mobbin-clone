@@ -1,0 +1,42 @@
+<div class="screen-sidebox">
+  <div class="screen-content-wrapper">
+    <div class="content">
+      @if (button != null) {
+        <div class="primary-image-wrapper-wrapper-wrapper">
+          <div class="primary-image-wrapper-wrapper">
+            <div class="primary-image-wrapper">
+              <img [src]="button.category.primaryPhoto" [alt]="button.category.primaryPhotoAlt" class="screen-image">
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+    <div class="content">
+      @if (button != null) {
+        <div class="secondary-image-wrapper-wrapper-wrapper">
+          <div class="secondary-image-wrapper-wrapper">
+            <div class="secondary-image-wrapper">
+              <img [src]="button.category.secondaryPhoto" [alt]="button.category.secondaryPhotoAlt" class="screen-image">
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+    <div class="content">
+      @if (button != null) {
+        <div class="secondary-image-wrapper-wrapper-wrapper">
+          <div class="secondary-image-wrapper-wrapper">
+            <div class="secondary-image-wrapper">
+              <img [src]="button.category.tertiaryPhoto" [alt]="button.category.tertiaryPhotoAlt" class="screen-image">
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+  <div class="screen-text-wrapper">
+    @if (button != null) {
+      <p class="compact-text">{{ button.category.description }}</p>
+    }
+  </div>
+</div>
