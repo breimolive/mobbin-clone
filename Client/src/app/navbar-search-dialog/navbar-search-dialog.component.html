@@ -41,15 +41,18 @@
         <app-navbar-dialog-text-in-screenshot-section></app-navbar-dialog-text-in-screenshot-section>
         }
         @if (this.mode == "Categories") {
-        <app-navbar-dialog-categories-section (clicked)="itsHovering($event)"></app-navbar-dialog-categories-section>
+        <app-navbar-dialog-categories-section (clicked)="itsCategoryHovering($event)"></app-navbar-dialog-categories-section>
         }
         @if (this.mode == "Screens") {
-        <app-navbar-dialog-screens-content-section></app-navbar-dialog-screens-content-section>
+        <app-navbar-dialog-screens-content-section (clicked)="itsScreenHovering($event)"></app-navbar-dialog-screens-content-section>
         }
       </div>
     </div>
   </section>
-  @if (this.mode == "Categories" && buttonSelected != null) {
-  <app-navbar-dialog-category-sidebox class="app-category-sidebox" [button]="buttonSelected"></app-navbar-dialog-category-sidebox>
+  @if (this.mode == "Categories" && buttonCategorySelected != null) {
+  <app-navbar-dialog-category-sidebox class="app-category-sidebox" [button]="buttonCategorySelected"></app-navbar-dialog-category-sidebox>
+  }
+  @if (this.mode == "Screens" && buttonScreenSelected != null) {
+    <app-navbar-dialog-screen-sidebox class="app-screen-sidebox" [button]="buttonScreenSelected"></app-navbar-dialog-screen-sidebox>
   }
 </dialog>

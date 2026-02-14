@@ -5,7 +5,7 @@
         <p class="screen-label" [attr.aria-labelledby]="'label-' + screen.title">{{ screen.title }}</p>
         <div class="button-wrapper" [attr.aria-labelledby]="'button-wrapper-for-' + screen.title">
           @for (button of screen.buttons; track button.id) {
-            <app-navbar-dialog-screen-button [button]="button"/>
+            <app-navbar-dialog-screen-button (hover)="onHover($event)" [button]="button"/>
           }
         </div>
       </div>

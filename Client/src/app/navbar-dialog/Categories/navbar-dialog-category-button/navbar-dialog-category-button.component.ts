@@ -15,8 +15,4 @@ export class NavbarDialogCategoryButtonComponent {
   onEnter() {
     this.hover.emit(this.button);
   }
-
-  onLeave() {
-    this.hover.emit(null);
-  }
 }

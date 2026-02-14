@@ -18,7 +18,7 @@ import {
 import {
   NavbarDialogCategoriesSectionComponent
 } from "../navbar-dialog/Categories/navbar-dialog-categories-section/navbar-dialog-categories-section.component";
-import buttonCategoryData from "../api.service";
+import buttonCategoryData, {buttonScreensData} from "../api.service";
 import {
   NavbarDialogCategorySideboxComponent
 } from "../navbar-dialog/Categories/navbar-dialog-category-sidebox/navbar-dialog-category-sidebox.component";
@@ -26,6 +26,9 @@ import { CommonModule } from '@angular/common';
 import {
   NavbarDialogScreensContentSectionComponent
 } from "../navbar-dialog/Screens/navbar-dialog-screens-content-section/navbar-dialog-screens-content-section.component";
+import {
+  NavbarDialogScreenSideboxComponent
+} from "../navbar-dialog/Screens/navbar-dialog-screen-sidebox/navbar-dialog-screen-sidebox.component";
 
 type SidebarSelected = 'Trending' | 'Categories' | 'Screens' | 'UI Elements' | 'Flows';
 
@@ -43,17 +46,18 @@ type SidebarSelected = 'Trending' | 'Categories' | 'Screens' | 'UI Elements' | '
     NavbarDialogCategorySideboxComponent,
     NavbarDialogSidebarComponent,
     CommonModule,
-    NavbarDialogScreensContentSectionComponent
+    NavbarDialogScreensContentSectionComponent,
+    NavbarDialogScreenSideboxComponent
   ],
   standalone: true,
   styleUrl: './navbar-search-dialog.component.css'
 })
 export class NavbarSearchDialogComponent {
   @Output() hover = new EventEmitter<buttonCategoryData | null>();
-  sideboxes = document.getElementsByClassName("category-sidebox");
   @ViewChild('dialogRef') imageDialog!: ElementRef<HTMLDialogElement>;
   lastFiveSearches: string[] | null = null;
-  buttonSelected: buttonCategoryData | null = null;
+  buttonCategorySelected: buttonCategoryData | null = null;
+  buttonScreenSelected: buttonScreensData | null = null;
   mode: SidebarSelected = "Trending";
 
   private readonly backdropClickHandler = (event: MouseEvent) => {
@@ -78,8 +82,12 @@ export class NavbarSearchDialogComponent {
     });
   }
 
-  itsHovering(button: buttonCategoryData | null) {
-    this.buttonSelected = button;
+  itsScreenHovering(button: buttonScreensData | null) {
+    this.buttonScreenSelected = button;
+  }
+
+  itsCategoryHovering(button: buttonCategoryData | null) {
+    this.buttonCategorySelected = button;
 
     /*
     // Adjust sidebox position based on button id
@@ -172,8 +180,6 @@ export class NavbarSearchDialogComponent {
     if (type == null) {
       return;
     }
-
-    this.mode = type;
-    console.log(this.mode);
+    this.mode = type
   }
 }
